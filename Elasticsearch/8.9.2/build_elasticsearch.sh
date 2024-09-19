@@ -11,7 +11,7 @@ set -e -o pipefail
 PACKAGE_NAME="elasticsearch"
 PACKAGE_VERSION="8.9.2"
 CURDIR="$(pwd)"
-PATCH_URL="https://raw.githubusercontent.com/linux-on-ibm-z/scripts/master/Elasticsearch/8.9.2/patch/elasticsearch.patch"
+PATCH_URL="https://raw.githubusercontent.com/anuragsm/scripts/s390x_changes/Elasticsearch/8.9.2/patch/elasticsearch.patch"
 TEMURIN_URL="https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.7%2B7/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.7_7.tar.gz"
 ES_REPO_URL="https://github.com/elastic/elasticsearch"
 LOG_FILE="$CURDIR/logs/${PACKAGE_NAME}-${PACKAGE_VERSION}-$(date +"%F-%T").log"
